@@ -26,11 +26,17 @@ namespace UnitTest
         {
             LrcObject lrc = new LrcObject();
             LrcAdaper.ReadFromFile(ref lrc, @"..\..\..\LrcLib\TestRead.lrc");
-            Console.WriteLine("AR:{0}",lrc.LrcHeaders[(int)LrcHeader.Type.AR].Text);
-            Console.WriteLine("AL:{0}",lrc.LrcHeaders[(int)LrcHeader.Type.AL].Text);
-            Console.WriteLine("BY:{0}",lrc.LrcHeaders[(int)LrcHeader.Type.BY].Text);
-            Console.WriteLine("TI:{0}",lrc.LrcHeaders[(int)LrcHeader.Type.TI].Text);
-            Console.WriteLine("OFFSET:{0}",lrc.LrcHeaders[(int)LrcHeader.Type.OFFSET].Text);
+            Console.WriteLine("AR:\t{0}",lrc.LrcHeaders[(int)LrcHeader.Type.AR].Text);
+            Console.WriteLine("AL:\t{0}",lrc.LrcHeaders[(int)LrcHeader.Type.AL].Text);
+            Console.WriteLine("BY:\t{0}",lrc.LrcHeaders[(int)LrcHeader.Type.BY].Text);
+            Console.WriteLine("TI:\t{0}",lrc.LrcHeaders[(int)LrcHeader.Type.TI].Text);
+            Console.WriteLine("OFFSET:\t{0}",lrc.LrcHeaders[(int)LrcHeader.Type.OFFSET].Text);
+
+            Console.WriteLine("Time\tText");
+            foreach(LrcLine line in lrc.LrcLines)
+            {
+                Console.WriteLine("{0}\t{1}",LrcLine.TimeToString(line.Time),line.Text);
+            }
         }
     }
 }

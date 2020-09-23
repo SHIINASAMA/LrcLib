@@ -21,7 +21,7 @@ namespace LrcLib.LrcData
             this.Text = Text;
         }
 
-        public string TimeToString(TimeSpan Time)
+        public static string TimeToString(TimeSpan Time)
         {
             string min = Time.Minutes.ToString();
             if (min.Length == 1) min = "0" + min;
