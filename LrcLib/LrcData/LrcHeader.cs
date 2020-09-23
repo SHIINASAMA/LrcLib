@@ -18,7 +18,7 @@ namespace LrcLib.LrcData
 
         public string Text;
 
-        public static string FormatString = @"^\[\w{2,6}\:\w{1,}\]";
+        public static string FormatString = @"\[\w{2,6}\:.*\]";
 
         public LrcHeader() { }
 
