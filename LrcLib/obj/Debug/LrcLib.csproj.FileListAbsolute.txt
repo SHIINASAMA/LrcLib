@@ -1,6 +1,0 @@
-E:\Code\LrcLib\LrcLib\bin\Debug\LrcLib.dll
-E:\Code\LrcLib\LrcLib\bin\Debug\LrcLib.pdb
-E:\Code\LrcLib\LrcLib\obj\Debug\LrcLib.csprojAssemblyReference.cache
-E:\Code\LrcLib\LrcLib\obj\Debug\LrcLib.csproj.CoreCompileInputs.cache
-E:\Code\LrcLib\LrcLib\obj\Debug\LrcLib.dll
-E:\Code\LrcLib\LrcLib\obj\Debug\LrcLib.pdb
