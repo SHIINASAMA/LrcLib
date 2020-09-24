@@ -18,14 +18,14 @@ namespace UnitTest
             lrc.LrcHeaders[(int)LrcHeader.Type.TI].Text = "TI";
             lrc.LrcHeaders[(int)LrcHeader.Type.OFFSET].Text = "OFFSET";
             lrc.LrcLines.Add(new LrcLine(new TimeSpan(0, 0, 0, 0, 0), "This is a test."));
-            LrcAdaper.WriteToFile(ref lrc, @"..\..\..\LrcLib\TestWrite.lrc");
+            LrcAdapter.WriteToFile(ref lrc, @"..\..\..\LrcLib\TestWrite.lrc");
         }
 
         [TestMethod]
         public void TestReadMethod()
         {
             LrcObject lrc = new LrcObject();
-            LrcAdaper.ReadFromFile(ref lrc, @"..\..\..\LrcLib\TestRead.lrc");
+            LrcAdapter.ReadFromFile(ref lrc, @"..\..\..\LrcLib\TestRead.lrc");
             Console.WriteLine("AR:\t{0}",lrc.LrcHeaders[(int)LrcHeader.Type.AR].Text);
             Console.WriteLine("AL:\t{0}",lrc.LrcHeaders[(int)LrcHeader.Type.AL].Text);
             Console.WriteLine("BY:\t{0}",lrc.LrcHeaders[(int)LrcHeader.Type.BY].Text);

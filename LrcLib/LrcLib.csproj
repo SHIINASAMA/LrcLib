@@ -40,7 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LrcAdapter\LrcAdaper.cs" />
+    <Compile Include="LrcAdapter\LrcAdapter.cs" />
     <Compile Include="LrcData\LrcHeader.cs" />
     <Compile Include="LrcData\LrcLine.cs" />
     <Compile Include="LrcData\LrcObject.cs" />

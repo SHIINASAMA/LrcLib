@@ -8,7 +8,7 @@ using System.Text.RegularExpressions;
 
 namespace LrcLib.LrcAdapter
 {
-    public class LrcAdaper
+    public class LrcAdapter
     {
         public static void WriteToFile(ref LrcObject lrc,string path)
         {
